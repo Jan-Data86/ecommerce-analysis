@@ -81,7 +81,10 @@ ORDER BY Average_Check;
 -- =============================================
 SELECT
 	City,
-    SUM(Total_Amount) AS Revenue
+    SUM(Total_Amount) AS Revenue,
+    COUNT(Order_ID) As Orders,
+    AVG(Total_Amount) AS Average_Check,
+    ROUND(COUNT(Order_ID) / (SELECT COUNT(*) FROM sales) * 100) AS Order_Share    
 FROM sales
 GROUP BY City
 ORDER BY Revenue DESC
