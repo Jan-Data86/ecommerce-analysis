@@ -63,3 +63,28 @@ FROM sales
 GROUP BY Payment_Method
 ORDER BY Average_Check DESC;
 
+-- =============================================
+-- 5. Retention
+-- =============================================
+SELECT 
+	Is_Returning_Customer,
+	AVG(Total_Amount) AS Average_Check,
+    AVG(Customer_Rating) AS Average_Rating,
+    COUNT(Order_ID) AS orders,
+    ROUND(COUNT(Order_ID) / (SELECT COUNT(*) FROM sales) * 100, 1) AS Retention
+FROM sales
+GROUP BY Is_Returning_Customer
+ORDER BY Average_Check;
+
+-- =============================================
+-- 5. Top-10 Cities by Revenue
+-- =============================================
+SELECT
+	City,
+    SUM(Total_Amount) AS Revenue
+FROM sales
+GROUP BY City
+ORDER BY Revenue DESC
+LIMIT 10
+
+
