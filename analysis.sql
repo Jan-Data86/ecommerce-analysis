@@ -38,3 +38,28 @@ SELECT
 FROM sales
 GROUP BY Delivery_Time_Days
 ORDER BY Delivery_Time_Days;
+
+-- =============================================
+-- 4. Device Types
+-- =============================================
+SELECT 
+    Device_Type,
+    COUNT(Order_ID) AS Orders,
+    AVG(Total_Amount) AS Average_Check,
+    AVG(Customer_Rating) AS Average_Rating
+FROM sales
+GROUP BY Device_Type
+ORDER BY Average_Check DESC;
+
+-- =============================================
+-- 5. Payment Methods
+-- =============================================
+SELECT 
+    Payment_Method,
+    COUNT(Order_ID) AS Orders,
+    AVG(Total_Amount) AS Average_Check,
+    AVG(Customer_Rating) AS Average_Rating
+FROM sales
+GROUP BY Payment_Method
+ORDER BY Average_Check DESC;
+
