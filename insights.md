@@ -31,3 +31,39 @@
 ### 5. Top-10 Cities by Revenue
 - Istanbul makes almost 2 times more Revenue than Ankara(2nd city) (5.6 million vs 3 million)
 - Average Check is close to average between the cities, Total Revenue in bigger cities is bigger due to Order Quantity 
+
+
+
+
+
+
+## Pandas / Python Analysis
+
+### 1. Revenue by month dynamics
+- Revenue stays fairly stable across the period (1.3M-1.6M per month)
+- Possible peak in December 2023 (1.59M) — could indicate holiday demand, 
+  but not enough data (only 15 months) to confirm a real seasonal pattern
+
+### 2. Clients by age group
+- Customers aged 26-45 make up ~60% of the customer base (5,183 + 4,997 
+  out of 17,444 total)
+- The 55+ segment is nearly absent (only 626 customers, ~3.6%) — either 
+  this product category doesn't appeal to older shoppers, or they prefer 
+  offline/other channels
+- Marketing and product decisions should likely prioritize the 26-45 
+  segment, since it's both the largest and presumably has the highest 
+  purchasing power (mid-career)
+
+  ### 3. Gender comparison
+- No meaningful difference between Female and Male customers across 
+  orders count, average check, or rating (all within 1-2%)
+- "Other" category shows a higher average check (1530 vs ~1270) but 
+  the sample is too small (260 orders, 1.5% of total) to draw reliable
+  conclusions
+- Gender doesn't appear to be a meaningful segmentation variable for
+  this business — marketing strategy likely shouldn't be gender-targeted
+
+  ### 4. Cross-validated SQL and pandas results
+- Re-ran the Payment_Method breakdown in pandas after building it in SQL —
+  results matched exactly. Confirms the aggregation logic is correct and consistent 
+  regardless of tool.
