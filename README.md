@@ -62,3 +62,6 @@ customer satisfaction — including a predictive model for order value.
 - `analysis.sql` — SQL queries with inline result comments
 - `analysis_pandas.ipynb` — Python EDA + regression model
 - `insights.md` — detailed findings by analysis stage
+
+## Dashboard Preview
+![Dashboard](dashboard.png)
