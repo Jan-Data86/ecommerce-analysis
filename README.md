@@ -5,7 +5,7 @@ End-to-end analysis of an e-commerce dataset (17,049 transactions, 5,000 custome
 using SQL, Python, Excel and Power BI. The goal was to understand revenue drivers, 
 customer behavior, and what influences customer satisfaction.
 
-## Tools & Skills
+## Tools & Skills 
 - **SQL (MySQL)** — data exploration, aggregations, window functions
 - **Python (pandas, matplotlib, seaborn)** — EDA, data visualization, correlation analysis
 - **Power BI** — interactive dashboard with DAX measures and slicers
