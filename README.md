@@ -41,6 +41,6 @@ customer behavior, and what influences customer satisfaction.
   open-ended reviews) to actually understand what drives satisfaction
 
 ## Files
-- `sql/analysis.sql` — all SQL queries with comments
-- `notebooks/analysis.ipynb` — Python EDA with visualizations  
+- 'analysis.sql` — all SQL queries with comments
+- `analysis.ipynb` — Python EDA with visualizations  
 - `insights.md` — detailed findings by analysis stage
