@@ -90,4 +90,13 @@
 - Overall: the dataset has very low inter-variable correlation outside of
   pricing mechanics — no hidden relationships to exploit for modeling
 
+  ### 7. Linear Regression: predicting Total Amount
+- R² = 0.82 — model explains 82% of variance (strong result for simple linear regression)
+- MAE = 542 on avg check of 1,277 (~42% error) — acceptable for forecasting direction,
+  too inaccurate for exact revenue prediction
+- High MAE driven by price dispersion across categories (Electronics orders at 25,000
+  vs Books at 50 — one linear formula struggles to fit both)
+- Next step: train category-specific models or use Random Forest with category
+  as a feature — expected to reduce MAE significantly
+
   
