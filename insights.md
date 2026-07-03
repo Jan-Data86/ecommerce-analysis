@@ -67,3 +67,16 @@
 - Re-ran the Payment_Method breakdown in pandas after building it in SQL —
   results matched exactly. Confirms the aggregation logic is correct and consistent 
   regardless of tool.
+
+  ### 5. What drives Customer Rating? (correlation analysis)
+
+- Ran Pearson correlation between Customer Rating and all numeric variables, all
+  coefficients are between-0.012 and +0.007, effectively zero across the board.
+- Conclusion: either customers rate randomly/habitually , or rating 
+  is driven by factors absent from this dataset — product quality, 
+  packaging, customer support interactions
+- Business recommendation: to improve rating, collect qualitative 
+  data (support tickets, return reasons, review text) — current 
+  numeric data alone cannot answer this question.
+
+  
