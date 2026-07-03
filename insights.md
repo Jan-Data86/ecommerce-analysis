@@ -79,4 +79,15 @@
   data (support tickets, return reasons, review text) — current 
   numeric data alone cannot answer this question.
 
+  ### 6. Correlation heatmap (all numeric variables)
+- Only meaningful correlations are between pricing variables:
+  Unit_Price vs Total_Amount: 0.87 (strong — higher price = higher order value)
+  Discount_Amount vs Unit_Price: 0.48 (moderate — bigger discounts on more expensive items)
+  Discount_Amount vs Total_Amount: 0.46 (moderate — same logic)
+- Customer_Rating shows near-zero correlation with every variable (all within ±0.02)
+  — confirms the earlier finding: rating cannot be explained by any numeric variable
+  in this dataset
+- Overall: the dataset has very low inter-variable correlation outside of
+  pricing mechanics — no hidden relationships to exploit for modeling
+
   
