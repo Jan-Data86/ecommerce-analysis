@@ -65,3 +65,10 @@ customer satisfaction — including a predictive model for order value.
 
 ## Dashboard Preview
 ![Dashboard](dashboard.png)
+
+## Excel Analysis
+- Pivot table: Revenue by Category × Device Type
+- SUMIFS: revenue by category and device with dynamic criteria
+- XLOOKUP: city lookup by Order_ID
+- Conditional formatting: top 10% orders by revenue highlighted
+- File: `excel_analysis.xlsx`
