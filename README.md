@@ -58,17 +58,21 @@ customer satisfaction — including a predictive model for order value.
 - Identified next step: category-specific models or Random Forest 
   with category as a feature would significantly reduce error
 
-## Files
-- `analysis.sql` — SQL queries with inline result comments
-- `analysis_pandas.ipynb` — Python EDA + regression model
-- `insights.md` — detailed findings by analysis stage
-
-## Dashboard Preview
-![Dashboard](dashboard.png)
-
 ## Excel Analysis
 - Pivot table: Revenue by Category × Device Type
 - SUMIFS: revenue by category and device with dynamic criteria
 - XLOOKUP: city lookup by Order_ID
 - Conditional formatting: top 10% orders by revenue highlighted
-- File: `excel_analysis.xlsx`
+
+## Files
+- `analysis.sql` — SQL queries with inline result comments
+- `analysis_pandas.ipynb` — Python EDA + regression model
+- `insights.md` — detailed findings by analysis stage
+- `excel_analysis.xlsx`
+- `dashboard.png`
+
+## Dashboard Preview
+![Dashboard](dashboard.png)
+
+
+
