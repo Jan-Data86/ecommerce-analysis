@@ -11,7 +11,7 @@ customer satisfaction — including a predictive model for order value.
 - **Python (pandas, matplotlib, seaborn, scikit-learn)** — EDA, 
   data visualization, correlation analysis, linear regression
 - **Power BI** — interactive dashboard with DAX measures and slicers
-- **Excel** — pivot tables, SUMIFS, INDEX-MATCH
+- **Excel** — pivot tables, SUMIFS, XLOOKUP
 
 ## Dataset
 [E-commerce Customer Behavior Dataset](https://www.kaggle.com/datasets/umuttuygurr/e-commerce-customer-behavior-and-sales-analysis-tr)  
